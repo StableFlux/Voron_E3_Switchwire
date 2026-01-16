@@ -24,8 +24,10 @@ sudo nano /boot/armbianEnv.txt
 
 Ensure these lines are present and not commented:
 
-```overlays=mcp2515
-param_mcp2515_speed=500000```
+```
+overlays=mcp2515
+param_mcp2515_speed=500000
+```
 
 Save and reboot:
 
@@ -39,7 +41,9 @@ This loads the MCP2515 driver and exposes the CAN controller to the kernel.
 
 Create or edit:
 
-```sudo nano /etc/network/interfaces.d/can0```
+```
+sudo nano /etc/network/interfaces.d/can0
+```
 
 Use this configuration:
 
