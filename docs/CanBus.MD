@@ -24,8 +24,8 @@ sudo nano /boot/armbianEnv.txt
 
 Ensure these lines are present and not commented:
 
-overlays=mcp2515
-param_mcp2515_speed=500000
+```overlays=mcp2515
+param_mcp2515_speed=500000```
 
 Save and reboot:
 
@@ -39,14 +39,16 @@ This loads the MCP2515 driver and exposes the CAN controller to the kernel.
 
 Create or edit:
 
-sudo nano /etc/network/interfaces.d/can0
+```sudo nano /etc/network/interfaces.d/can0```
 
 Use this configuration:
 
+```
 auto can0
 iface can0 can static
     bitrate 500000
     up ifconfig $IFACE txqueuelen 1024
+```
 
 This ensures the CAN interface is brought up automatically at boot.
 
@@ -56,13 +58,17 @@ This ensures the CAN interface is brought up automatically at boot.
 
 Check that the interface exists:
 
+```
 ip link show can0
+```
 
 You should see a can0 entry.
 
 Query the CAN bus:
 
+```
 canbus_query.py can0
+```
 
 You should receive the UUID of your EBBCan SB2209.
 
@@ -72,7 +78,9 @@ You should receive the UUID of your EBBCan SB2209.
 
 Useful for testing without rebooting:
 
+```
 sudo ip link set can0 up type can bitrate 500000
+```
 
 ---
 
