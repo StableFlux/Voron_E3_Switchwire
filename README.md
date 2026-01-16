@@ -1,5 +1,9 @@
 # Voron_E3_Switchwire
 
+## 📌 Important Documentation  
+For CAN bus setup, troubleshooting, and configuration details, see:  
+👉 **[CAN Bus Setup & Troubleshooting](docs/CanBus.md)**
+
 # Klipper Configuration for BIGTREETECH Manta M4P + EBBCan SB2209
 
 This repository contains a set of Klipper configuration files for a 3D printer using the BIGTREETECH Manta M4P mainboard and EBBCan SB2209 toolhead board. The setup is designed for a CoreXZ kinematics printer with sensorless homing, inductive probe, and advanced features such as bed mesh leveling, input shaping, and display integration.
