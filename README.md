@@ -2,7 +2,7 @@
 
 ## 📌 Important Documentation  
 For CAN bus setup, troubleshooting, and configuration details, see:  
-👉 **[CAN Bus Setup & Troubleshooting](docs/CanBus.md)**
+👉 **[CAN Bus Setup & Troubleshooting](docs/CanBus.MD)**
 
 # Klipper Configuration for BIGTREETECH Manta M4P + EBBCan SB2209
 
